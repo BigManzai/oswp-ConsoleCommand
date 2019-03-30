@@ -3,7 +3,7 @@ OpenSimulator Console Command PHP
 
 Status OK
 
-![ConsoleCommand](https://github.com/BigManzai/osConsoleCommand/blob/master/os-console.jpg)
+![ConsoleCommand](https://github.com/BigManzai/oswp-ConsoleCommand/blob/master/oswp-consolecommand.jpg)
 
 Selbstverständlich gibt es auf meiner Software keinerlei Garantie.
 Weder auf Funktion noch Datensicherheit oder Funktionalität.
