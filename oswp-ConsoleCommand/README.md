@@ -1,9 +1,5 @@
 # oswpConsoleCommand
-Wordpress OpenSimulator Console Command PHP
-
-Status OK
-
-![ConsoleCommand](https://github.com/BigManzai/osConsoleCommand/blob/master/os-console.jpg)
+Wordpress OpenSimulator Console Command 
 
 Selbstverständlich gibt es auf meiner Software keinerlei Garantie.
 Weder auf Funktion noch Datensicherheit oder Funktionalität.
