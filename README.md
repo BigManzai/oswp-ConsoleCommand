@@ -1,6 +1,10 @@
 # oswp-ConsoleCommand
 OpenSimulator Console Command PHP
 
+oswp-ConsoleCommand erscheint nur im Admin Menü.
+
+oswp-ConsoleCommand only appears in the Admin menu.
+
 Status OK
 
 ![ConsoleCommand](https://github.com/BigManzai/oswp-ConsoleCommand/blob/master/oswp-consolecommand.jpg)
