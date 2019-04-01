@@ -13,7 +13,7 @@
  * @wordpress-plugin
  * Plugin Name:       oswp-consolecommand
  * Plugin URI:        https://github.com/BigManzai/oswp-consolecommand
- * Description:       Einstellungen für den OpenSimulator. ACHTUNG! Dies ist nur ein Test ohne weitere Funktion.
+ * Description:       OpenSimulator WordPress Console Command erscheint nur im Admin Menü. Das Plugin fügt sich Links in euer Dashboard Menü ein. Das Plugin sendet ein frei wählbares Kommando an den OpenSimulator.
  * Version:           1.0.6
  * Author:            Manfred Aabye
  * Author URI:        http://openmanniland.de
@@ -38,7 +38,7 @@ function oswp_plugin_create_menu() {
 
 function register_oswp_plugin_settings() {
 	//register our settings
-	register_setting( 'oswp-plugin-settings-group', 'oswp_BaseURL' );
+	register_setting( 'gs-group', 'oswp_BaseURL' );
 	register_setting( 'oswp-plugin-settings-group', 'oswp_ConsolePass' );
 	register_setting( 'oswp-plugin-settings-group', 'oswp_ConsolePort' );
 	
