@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: oswp-consolecommand\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-02 10:09+0000\n"
-"PO-Revision-Date: 2019-04-02 16:34+0200\n"
+"PO-Revision-Date: 2019-04-02 12:42+0200\n"
 "Last-Translator: Manfred Aabye <openmanniland@gmx.de>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -16,169 +16,197 @@ msgstr ""
 
 #: oswp-ConsoleCommand.php:73
 msgid "alert - Send an alert to everyone"
-msgstr "alert - Nachricht - Sendet eine Nachricht an alle"
+msgstr "alert - Senden Sie eine Benachrichtigung an alle"
 
 #: oswp-ConsoleCommand.php:74
 msgid "alert-user firstname lastname message - Send an alert to a user"
 msgstr ""
-"alert-user - Vornamen Nachname Nachricht - Sendet eine Benachrichtigung an "
-"einen bestimmten Benutzer"
+"alert-user - Vornamens Nachnamen Nachricht - Sendet eine Benachrichtigung an "
+"einen Benutzer"
 
 #: oswp-ConsoleCommand.php:75
 msgid ""
 "appearance find uuid-or-start-of-uuid - Find out which avatar uses the given "
 "asset as a baked texture, if any."
 msgstr ""
-"appearance find Uuid-oder-Start-von-Uuid - Findet heraus, welcher Avatar das "
-"angegebene Asset als gebackene Textur verwendet, falls vorhanden."
+"appearance find uuid-or-start-of-uuid - Finden Sie heraus, welcher Avatar "
+"den gegebenen Vermögenswert als gebackene Textur verwendet, wenn überhaupt."
 
 #: oswp-ConsoleCommand.php:76
+#, fuzzy
 msgid ""
 "appearance rebake first-name last-name - Send a request to the users viewer "
 "for it to rebake and reupload its appearance textures."
 msgstr ""
-"appearance rebake - Vorname Nachname - Nachricht an den Viewer: Avatar neu "
-"laden."
+"Erscheinungsbild Rebake Vorname Vorname-Senden Sie eine Anfrage an den "
+"Benutzer-Viewer, um es zu rebellieren und wieder hochzuladen seine "
+"Erscheinung-Texturen."
 
 #: oswp-ConsoleCommand.php:77
+#, fuzzy
 msgid ""
 "appearance send first-name last-name - Send appearance data for each avatar "
 "in the simulator to other viewers."
 msgstr ""
-"appearance send - Vorname Nachname - Sendet die Daten für das Aussehen für "
-"jeden Avatar im Simulator an andere Viewer."
+"Auftritt senden Vornamen Vorname-Senden Sie Optionsdaten für jeden Avatar im "
+"Simulator an andere Zuschauer."
 
 #: oswp-ConsoleCommand.php:78
+#, fuzzy
 msgid ""
 "appearance show first-name last-name - Show appearance information for "
 "avatars."
 msgstr ""
-"appearance show - Vorname Nachname - Zeigt Informationen über das Aussehen "
-"des Avatar."
+"Erscheinungsbild zeigt Vornamen Vorname-Show Erscheinungsinformationen für "
+"Avatare."
 
 #: oswp-ConsoleCommand.php:79
+#, fuzzy
 msgid ""
 "attachments show first-name last-name - Show attachment information for "
 "avatars in this simulator."
 msgstr ""
-"attachments show - Vorname Nachname - Zeige Anhangs Informationen für "
-"Avatare in diesem Simulator."
+"Anhänge zeigen den Vornamen des Vornamens-zeigen Sie in diesem Simulator "
+"Anbauinformationen für Avatare."
 
 #: oswp-ConsoleCommand.php:80
+#, fuzzy
 msgid ""
 "backup - Persist currently unsaved object changes immediately instead of "
 "waiting for the normal persistence call."
 msgstr ""
-"backup - Das momentan nicht gespeicherte Objekt beibehalten es wird sofort "
-"gespeichert."
+"Backup-Persist derzeit nicht gespeicherte Objekte ändert sich sofort, "
+"anstatt auf den normalen Daueraufruf zu warten."
 
 #: oswp-ConsoleCommand.php:81
+#, fuzzy
 msgid "bypass permissions true / false - Bypass permission checks"
-msgstr ""
-"bypass permissions - true oder false - Berechtigungsüberprüfungen umgehen"
+msgstr "Bypass-Berechtigungen wahr/falsch-Bypass-Genehmigungskontrollen"
 
 #: oswp-ConsoleCommand.php:82
+#, fuzzy
 msgid "change region region name - Change current console region"
-msgstr ""
-"change region - Regionsname - Aktuelle Region ändern, root sind alle Regionen"
+msgstr "Name der Region ändern-Aktuelle Konsolenregion ändern"
 
 #: oswp-ConsoleCommand.php:83
+#, fuzzy
 msgid ""
 "clear image queues first-name last-name - Clear the image queues textures "
 "downloaded via UDP for a particular client."
 msgstr ""
-"clear image queues - Vorname Nachname - Löscht Bildwarteschlangen (Texturen, "
-"die über UDP heruntergeladen wurden) für einen bestimmten Client."
+"Klarsicht-Schlangen im Vornamen im Vornamen-Löschen Sie die Bildschlangen "
+"Texturen, die über UDP für einen bestimmten Client heruntergeladen werden."
 
 #: oswp-ConsoleCommand.php:84
+#, fuzzy
 msgid "command-script script - Run a command script from file"
-msgstr "command-script script - Führt ein Befehlskript aus einer Datei aus"
+msgstr "Befehlskript-Führen Sie ein Befehlskript aus der Datei"
 
 #: oswp-ConsoleCommand.php:85
+#, fuzzy
 msgid "config get section key - Synonym for config show"
-msgstr "config get section key - Synonym für config show"
+msgstr "Konfiguration erhält Sektionsschlüssel-Synonym für Konfigurationsshow"
 
 #: oswp-ConsoleCommand.php:86
+#, fuzzy
 msgid ""
 "config save path - Save current configuration to a file at the given path"
 msgstr ""
-"config save path - Speichert die aktuelle Konfiguration in eine Datei im "
-"angegebenen Pfad"
+"Konfiguration des Pfads-Speichern Sie die aktuelle Konfiguration in eine "
+"Datei auf dem gegebenen Pfad"
 
 #: oswp-ConsoleCommand.php:87
+#, fuzzy
 msgid ""
 "config set section key value - Set a config option.  In most cases this is "
 "not useful since changed parameters are not dynamically reloaded.  Neither "
 "do changed parameters persist - you will have to change a config file "
 "manually and restart."
-msgstr "config set - section key value - Setze eine Konfigurationsoption."
+msgstr ""
+"Konfiguration der Schlüsselwert des Abschnitts-Setzen Sie eine "
+"Konfigurationsoption.  In den meisten Fällen ist dies nicht sinnvoll, da "
+"geänderte Parameter nicht dynamisch neu geladen werden.  Auch die geänderten "
+"Parameter bleiben nicht bestehen-Sie müssen eine Konfigurationsdatei manuell "
+"ändern und neu starten."
 
 #: oswp-ConsoleCommand.php:88
+#, fuzzy
 msgid "config show section key - Show config information"
-msgstr "config show section key - Konfiguration anzeigen"
+msgstr "Konfiguration zeigt Sektionsschlüssel-Konfiguration anzeigen"
 
 #: oswp-ConsoleCommand.php:89
+#, fuzzy
 msgid "create region region name region_file.ini - Create a new region."
 msgstr ""
-"create region - Region Name regionsdatei.ini - Erstellet eine neue Region."
+"Erstellen Sie die Region Name region _ file.ini-Erstellen Sie eine neue "
+"Region."
 
 #: oswp-ConsoleCommand.php:90
+#, fuzzy
 msgid "debug attachments log 0|1 - Turn on attachments debug logging"
-msgstr ""
-"debug attachments log 0 | 1 - Aktiviert/Deaktiviert Debug Protokollierung "
-"0=aus, 1=an"
+msgstr "Anhänge debuggt log 0 | 1-Schalten Sie die Anhänge Debug-Logging"
 
 #: oswp-ConsoleCommand.php:91
+#, fuzzy
 msgid "debug attachments status - Show current attachments debug status"
 msgstr ""
-"debug attachments status - Zeigt den Debug Status der aktuellen Anhänge an"
+"Anhänge debuggen Status debuggt-aktuelle Anhänge debuggen Status anzeigen"
 
 #: oswp-ConsoleCommand.php:92
+#, fuzzy
 msgid ""
 "debug eq 0|1|2 - Turn on event queue debugging = 0 - turns off all event "
 "queue logging = 1 - turns on event queue setup and outgoing event logging = "
 "2 - turns on poll notification"
-msgstr "debug eq 0 | 1 | 2 - Aktiviert das Debuggen der Ereigniswarteschlange"
+msgstr ""
+"Debug eq 0 | 1 | 2-Drehen Sie auf die Ereignisschlange Debugging = 0-"
+"schaltet alle Ereignisqueue-Logging = 1-schaltet auf Event-Warteschlangen-"
+"Setup und ausgehende Ereignisprotokolle = 2-schaltet auf die Umfragebeldung "
+"ein"
 
 #: oswp-ConsoleCommand.php:93
+#, fuzzy
 msgid ""
 "debug groups messaging verbose true|false - This setting turns on very "
 "verbose groups messaging debugging"
 msgstr ""
-"debug groups messaging verbose - true oder false - Diese Einstellung "
-"aktiviert das Nachrichten Debugging von Gruppen"
+"Debug-Gruppen Messaging verbose true | false-Diese Einstellung dreht sich "
+"auf sehr verbose Gruppen Messaging-Debugging"
 
 #: oswp-ConsoleCommand.php:94
+#, fuzzy
 msgid ""
 "debug groups verbose true|false - This setting turns on very verbose groups "
 "debugging"
 msgstr ""
-"debug groups verbose - true oder false - Diese Einstellung aktiviert das "
-"Debuggen von Gruppen"
+"Debug-Gruppen verbose true | false-Diese Einstellung dreht sich auf sehr "
+"verbose Gruppen Debugging"
 
 #: oswp-ConsoleCommand.php:95
+#, fuzzy
 msgid "debug http in|out|all level - Turn on http request logging."
-msgstr ""
-"debug http - in | out | all - level - Aktiviert die HTTP-"
-"Anforderungsprotokollierung."
+msgstr "Debug-http in | out | alle Ebenen-Einschalten auf http Anfrage loggen."
 
 #: oswp-ConsoleCommand.php:96
+#, fuzzy
 msgid ""
 "debug jobengine start|stop|status|log - Start, stop, get status or set "
 "logging level of the job engine."
 msgstr ""
-"debug jobengine start|stop|status|log - Start, Stopp, Status erhalten oder "
-"Logging-Level der Job-Engine einstellen."
+"Debug-Jobengine start | stop | status | log-Start, Stopp, Status erhalten "
+"oder Logging-Level der Job-Engine einstellen."
 
 #: oswp-ConsoleCommand.php:97
+#, fuzzy
 msgid "debug permissions true / false - Turn on permissions debugging"
 msgstr ""
-"debug permissions true / false - Einschalten von Berechtigungen, für "
+"Berechtigungen wahr/falsch debuggen-Einschalten von Berechtigungen, die "
 "debugging"
 
 #: oswp-ConsoleCommand.php:98
+#, fuzzy
 msgid "debug scene get - List current scene options."
-msgstr "debug scene get - Liste der aktuellen Szene Optionen."
+msgstr "Debug-Szene erhalten-Liste der aktuellen Szene-Optionen."
 
 #: oswp-ConsoleCommand.php:99
 #, fuzzy
