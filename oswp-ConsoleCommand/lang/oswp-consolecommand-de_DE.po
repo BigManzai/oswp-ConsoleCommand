@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: oswp-consolecommand\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-02 10:09+0000\n"
-"PO-Revision-Date: 2019-04-04 17:19+0200\n"
+"PO-Revision-Date: 2019-04-04 17:44+0200\n"
 "Last-Translator: Manfred Aabye <openmanniland@gmx.de>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: oswp-ConsoleCommand.php:73
 msgid "alert - Send an alert to everyone"
-msgstr "alert - Senden Sie eine Benachrichtigung an alle"
+msgstr "alert - Text - Sendet eine Benachrichtigung an alle"
 
 #: oswp-ConsoleCommand.php:74
 msgid "alert-user firstname lastname message - Send an alert to a user"
@@ -328,39 +328,36 @@ msgstr ""
 "Szenen"
 
 #: oswp-ConsoleCommand.php:122
-#, fuzzy
 msgid ""
 "fcache clear file memory - Remove all assets in the cache.  If file or "
 "memory is specified then only this cache is cleared."
 msgstr ""
-"fcache clear file memory-Entfernen Sie alle Assets im Cache.  Wenn Datei "
-"oder Speicher angegeben werden, dann wird nur dieser Cache gelöscht."
+"fcache clear file memory - Entfernt alle Assets im Cache.  Wenn Datei oder "
+"Speicher angegeben werden, dann wird nur dieser Cache gelöscht."
 
 #: oswp-ConsoleCommand.php:123
-#, fuzzy
 msgid ""
 "fcache expire datetime - Purge cached assets older then the specified date/"
 "time"
 msgstr ""
-"fcache verfällt die Zeit-Purge zwischengespeicherte Assets älter als die "
-"angegebene Zeit"
+"fcache expire - DatumZeit - Zwischengespeicherte Ressourcen löschen, die "
+"älter als das angegebene Datum / Uhrzeit sind"
 
 #: oswp-ConsoleCommand.php:124
-#, fuzzy
 msgid "fcache status - Display cache status"
-msgstr "fcache Status-Display-Cache-Status"
+msgstr "fcache status - Zeigt den Cache Status an"
 
 #: oswp-ConsoleCommand.php:125
-#, fuzzy
 msgid ""
 "force gc - Manually invoke runtime garbage collection.  For debugging "
 "purposes"
-msgstr "Kraft gc-Manual aufruft die Müllabfuhr.  Für Debugging"
+msgstr ""
+"force gc - Die Garbage Collection der Laufzeit manuell aufrufen. Für "
+"Debugging-Zwecke"
 
 #: oswp-ConsoleCommand.php:126
-#, fuzzy
 msgid "force permissions true / false - Force permissions on or off"
-msgstr "Trupprechte wahr/falsch-Gewalteinlagen ein-oder ausschalten"
+msgstr "force permissions true / false - Erzwinge Berechtigungen an oder aus"
 
 #: oswp-ConsoleCommand.php:127
 #, fuzzy
@@ -492,22 +489,18 @@ msgid "load xml2 file name - Load a regions data from XML2 format"
 msgstr "Xml2-Dateiname laden-Laden Sie eine Region Daten aus dem XML2-Format"
 
 #: oswp-ConsoleCommand.php:148
-#, fuzzy
 msgid "login disable - Disable simulator logins"
-msgstr "Login deaktivieren-Simulator-Logins deaktivieren"
+msgstr "login disable - Logins deaktivieren"
 
 #: oswp-ConsoleCommand.php:149
-#, fuzzy
 msgid "login enable - Enable simulator logins"
-msgstr "Logimelfähig-Simulator-Logins aktivieren"
+msgstr "login enable - Logins aktivieren"
 
 #: oswp-ConsoleCommand.php:150
-#, fuzzy
 msgid "login status - Show login status"
-msgstr "Login-Status-Login-Status anzeigen"
+msgstr "login status - Login Status anzeigen"
 
 #. Author of the plugin
-#, fuzzy
 msgid "Manfred Aabye"
 msgstr "Manfred Aabye"
 
@@ -521,25 +514,22 @@ msgstr ""
 "aktuelle Region und/oder Simulator"
 
 #: oswp-ConsoleCommand.php:66
-#, fuzzy
 msgid "OpenSimulator Console Commands"
 msgstr "OpenSimulator Console Commands"
 
 #. Description of the plugin
-#, fuzzy
 msgid ""
 "OpenSimulator WordPress Console Command only appears in the Admin menu. The "
 "plugin will be added to the left side of your dashboard menu. The plugin "
 "sends a freely selectable command to the OpenSimulator."
 msgstr ""
-"OpenSimulator WordPress-Konsole-Kommando erscheint nur im Admin-Menü. Das "
-"Plugin wird auf der linken Seite Ihres Armaturenbrett-Menüs hinzugefügt. Das "
+"OpenSimulator WordPress Console Command erscheint nur im Admin Menü. Das "
+"Plugin wird auf der linken Seite Ihres Dashboard Menüs hinzugefügt. Das "
 "Plugin sendet einen frei wählbaren Befehl an den OpenSimulator."
 
 #. Name of the plugin
-#, fuzzy
 msgid "oswp-consolecommand"
-msgstr "oswp-consolekommand"
+msgstr "oswp-consolecommand"
 
 #: oswp-ConsoleCommand.php:152
 #, fuzzy
@@ -762,9 +752,8 @@ msgid "show appearance first-name last-name - Synonym for appearance show"
 msgstr "Show-Auftritt Vorname-Synonym für Optik"
 
 #: oswp-ConsoleCommand.php:182
-#, fuzzy
 msgid "show asset ID - Show asset information"
-msgstr "Asset-ID anzeigen-Informationen anzeigen"
+msgstr "show asset ID - Asset Informationen anzeigen"
 
 #: oswp-ConsoleCommand.php:183
 #, fuzzy
@@ -1038,14 +1027,12 @@ msgstr ""
 "der Region aufhalten"
 
 #: oswp-ConsoleCommand.php:222
-#, fuzzy
 msgid "show version - Show server version"
-msgstr "Showversion-Server-Version anzeigen"
+msgstr "show version - Server Version anzeigen"
 
 #: oswp-ConsoleCommand.php:223
-#, fuzzy
 msgid "shutdown - Quit the application"
-msgstr "Abschaltung-Die Anwendung beenden"
+msgstr "shutdown - Die Anwendung beenden"
 
 #: oswp-ConsoleCommand.php:224
 #, fuzzy
@@ -1406,23 +1393,19 @@ msgid "wind SimpleRandomWind strength value - wind strength"
 msgstr "Wind SimpleRandomWind Kraftwert-Windstärke"
 
 #: oswp-ConsoleCommand.php:279
-#, fuzzy
 msgid "windlight disable - Disable the windlight plugin."
-msgstr "Windlicht deaktivieren-Deaktivieren Sie das Windlicht-Plugin."
+msgstr "windlight disable - Deaktiviert das Windlight Plugin."
 
 #: oswp-ConsoleCommand.php:280
-#, fuzzy
 msgid "windlight enable - Enable the windlight plugin."
-msgstr "Windleuchte aktivieren-Aktivieren Sie das Windlicht-Plugin."
+msgstr "windlight enable - Aktiviert das Windlight Plugin."
 
 #: oswp-ConsoleCommand.php:281
-#, fuzzy
 msgid ""
 "windlight load - Load windlight profile from the database and broadcast."
 msgstr ""
-"Windlichtbelastung-Windlichtprofil aus der Datenbank und Sendung laden."
+"windlight load - Lädt Windlight Profil aus der Datenbank und sendet es."
 
 #: oswp-ConsoleCommand.php:282
-#, fuzzy
 msgid "xengine status - Show status information"
-msgstr "xengine Status-Statusinformationen anzeigen"
+msgstr "xengine status - XEngine Statusinformationen anzeigen"
