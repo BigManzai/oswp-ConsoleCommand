@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: oswp-consolecommand\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-02 10:09+0000\n"
-"PO-Revision-Date: 2019-04-02 12:42+0200\n"
+"PO-Revision-Date: 2019-04-04 16:34+0200\n"
 "Last-Translator: Manfred Aabye <openmanniland@gmx.de>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -33,245 +33,205 @@ msgstr ""
 "den gegebenen Vermögenswert als gebackene Textur verwendet, wenn überhaupt."
 
 #: oswp-ConsoleCommand.php:76
-#, fuzzy
 msgid ""
 "appearance rebake first-name last-name - Send a request to the users viewer "
 "for it to rebake and reupload its appearance textures."
 msgstr ""
-"Erscheinungsbild Rebake Vorname Vorname-Senden Sie eine Anfrage an den "
-"Benutzer-Viewer, um es zu rebellieren und wieder hochzuladen seine "
-"Erscheinung-Texturen."
+"appearance rebake - Vorname Nachname - Nachricht an den Viewer: Avatar neu "
+"laden."
 
 #: oswp-ConsoleCommand.php:77
-#, fuzzy
 msgid ""
 "appearance send first-name last-name - Send appearance data for each avatar "
 "in the simulator to other viewers."
 msgstr ""
-"Auftritt senden Vornamen Vorname-Senden Sie Optionsdaten für jeden Avatar im "
-"Simulator an andere Zuschauer."
+"appearance send - Vorname Nachname - Sende die Aussehensdaten für jeden "
+"Avatar im Simulator an andere Viewer."
 
 #: oswp-ConsoleCommand.php:78
-#, fuzzy
 msgid ""
 "appearance show first-name last-name - Show appearance information for "
 "avatars."
 msgstr ""
-"Erscheinungsbild zeigt Vornamen Vorname-Show Erscheinungsinformationen für "
-"Avatare."
+"appearance show - Vorname Nachname - Zeigt Informationen über das Aussehen "
+"des Avatar."
 
 #: oswp-ConsoleCommand.php:79
-#, fuzzy
 msgid ""
 "attachments show first-name last-name - Show attachment information for "
 "avatars in this simulator."
 msgstr ""
-"Anhänge zeigen den Vornamen des Vornamens-zeigen Sie in diesem Simulator "
-"Anbauinformationen für Avatare."
+"attachments show - Vorname Nachname - Zeige Anhanginformationen für Avatare "
+"in diesem Simulator."
 
 #: oswp-ConsoleCommand.php:80
-#, fuzzy
 msgid ""
 "backup - Persist currently unsaved object changes immediately instead of "
 "waiting for the normal persistence call."
 msgstr ""
-"Backup-Persist derzeit nicht gespeicherte Objekte ändert sich sofort, "
-"anstatt auf den normalen Daueraufruf zu warten."
+"backup - Das momentan nicht gespeicherte Objekt beibehalten wird sofort "
+"gespeichert."
 
 #: oswp-ConsoleCommand.php:81
-#, fuzzy
 msgid "bypass permissions true / false - Bypass permission checks"
-msgstr "Bypass-Berechtigungen wahr/falsch-Bypass-Genehmigungskontrollen"
+msgstr "bypass permissions - true / false - Berechtigungsüberprüfungen umgehen"
 
 #: oswp-ConsoleCommand.php:82
-#, fuzzy
 msgid "change region region name - Change current console region"
-msgstr "Name der Region ändern-Aktuelle Konsolenregion ändern"
+msgstr ""
+"change region - Regionsname - Aktuelle Region ändern, root sind alle Regionen"
 
 #: oswp-ConsoleCommand.php:83
-#, fuzzy
 msgid ""
 "clear image queues first-name last-name - Clear the image queues textures "
 "downloaded via UDP for a particular client."
 msgstr ""
-"Klarsicht-Schlangen im Vornamen im Vornamen-Löschen Sie die Bildschlangen "
-"Texturen, die über UDP für einen bestimmten Client heruntergeladen werden."
+"clear image queues - Vorname Nachname - Löscht Bildwarteschlangen (Texturen, "
+"die über UDP heruntergeladen wurden) für einen bestimmten Client."
 
 #: oswp-ConsoleCommand.php:84
-#, fuzzy
 msgid "command-script script - Run a command script from file"
-msgstr "Befehlskript-Führen Sie ein Befehlskript aus der Datei"
+msgstr "command-script script - Führt ein Befehlskript aus einer Datei aus"
 
 #: oswp-ConsoleCommand.php:85
-#, fuzzy
 msgid "config get section key - Synonym for config show"
-msgstr "Konfiguration erhält Sektionsschlüssel-Synonym für Konfigurationsshow"
+msgstr "config get section key - Synonym für config show"
 
 #: oswp-ConsoleCommand.php:86
-#, fuzzy
 msgid ""
 "config save path - Save current configuration to a file at the given path"
 msgstr ""
-"Konfiguration des Pfads-Speichern Sie die aktuelle Konfiguration in eine "
-"Datei auf dem gegebenen Pfad"
+"config save path - Speichert die aktuelle Konfiguration in eine Datei im "
+"angegebenen Pfad"
 
 #: oswp-ConsoleCommand.php:87
-#, fuzzy
 msgid ""
 "config set section key value - Set a config option.  In most cases this is "
 "not useful since changed parameters are not dynamically reloaded.  Neither "
 "do changed parameters persist - you will have to change a config file "
 "manually and restart."
-msgstr ""
-"Konfiguration der Schlüsselwert des Abschnitts-Setzen Sie eine "
-"Konfigurationsoption.  In den meisten Fällen ist dies nicht sinnvoll, da "
-"geänderte Parameter nicht dynamisch neu geladen werden.  Auch die geänderten "
-"Parameter bleiben nicht bestehen-Sie müssen eine Konfigurationsdatei manuell "
-"ändern und neu starten."
+msgstr "config set - section key value - Setze eine Konfigurationsoption."
 
 #: oswp-ConsoleCommand.php:88
-#, fuzzy
 msgid "config show section key - Show config information"
-msgstr "Konfiguration zeigt Sektionsschlüssel-Konfiguration anzeigen"
+msgstr "config show section key - Konfiguration anzeigen"
 
 #: oswp-ConsoleCommand.php:89
-#, fuzzy
 msgid "create region region name region_file.ini - Create a new region."
 msgstr ""
-"Erstellen Sie die Region Name region _ file.ini-Erstellen Sie eine neue "
-"Region."
+"create region - Region Name regionsdatei.ini - Erstellet eine neue Region."
 
 #: oswp-ConsoleCommand.php:90
-#, fuzzy
 msgid "debug attachments log 0|1 - Turn on attachments debug logging"
-msgstr "Anhänge debuggt log 0 | 1-Schalten Sie die Anhänge Debug-Logging"
+msgstr ""
+"debug attachments log 0 | 1 - Aktiviert/Deaktiviert Debug Protokollierung "
+"0=aus, 1=an"
 
 #: oswp-ConsoleCommand.php:91
-#, fuzzy
 msgid "debug attachments status - Show current attachments debug status"
 msgstr ""
-"Anhänge debuggen Status debuggt-aktuelle Anhänge debuggen Status anzeigen"
+"debug attachments status - Zeigt den Debug Status der aktuellen Anhänge an"
 
 #: oswp-ConsoleCommand.php:92
-#, fuzzy
 msgid ""
 "debug eq 0|1|2 - Turn on event queue debugging = 0 - turns off all event "
 "queue logging = 1 - turns on event queue setup and outgoing event logging = "
 "2 - turns on poll notification"
-msgstr ""
-"Debug eq 0 | 1 | 2-Drehen Sie auf die Ereignisschlange Debugging = 0-"
-"schaltet alle Ereignisqueue-Logging = 1-schaltet auf Event-Warteschlangen-"
-"Setup und ausgehende Ereignisprotokolle = 2-schaltet auf die Umfragebeldung "
-"ein"
+msgstr "debug eq 0 | 1 | 2 - Aktiviert das Debuggen der Ereigniswarteschlange"
 
 #: oswp-ConsoleCommand.php:93
-#, fuzzy
 msgid ""
 "debug groups messaging verbose true|false - This setting turns on very "
 "verbose groups messaging debugging"
 msgstr ""
-"Debug-Gruppen Messaging verbose true | false-Diese Einstellung dreht sich "
-"auf sehr verbose Gruppen Messaging-Debugging"
+"debug groups messaging verbose - true oder false - Diese Einstellung "
+"aktiviert das Nachrichten Debugging von Gruppen"
 
 #: oswp-ConsoleCommand.php:94
-#, fuzzy
 msgid ""
 "debug groups verbose true|false - This setting turns on very verbose groups "
 "debugging"
 msgstr ""
-"Debug-Gruppen verbose true | false-Diese Einstellung dreht sich auf sehr "
-"verbose Gruppen Debugging"
+"debug groups verbose - true oder false - Diese Einstellung aktiviert das "
+"Debuggen von Gruppen"
 
 #: oswp-ConsoleCommand.php:95
-#, fuzzy
 msgid "debug http in|out|all level - Turn on http request logging."
-msgstr "Debug-http in | out | alle Ebenen-Einschalten auf http Anfrage loggen."
+msgstr ""
+"debug http - in | out | all - level - Aktiviert die HTTP-"
+"Anforderungsprotokollierung."
 
 #: oswp-ConsoleCommand.php:96
-#, fuzzy
 msgid ""
 "debug jobengine start|stop|status|log - Start, stop, get status or set "
 "logging level of the job engine."
 msgstr ""
-"Debug-Jobengine start | stop | status | log-Start, Stopp, Status erhalten "
-"oder Logging-Level der Job-Engine einstellen."
+"debug jobengine start|stop|status|log - Start, Stopp, Status erhalten oder "
+"Logging-Level der Job-Engine einstellen."
 
 #: oswp-ConsoleCommand.php:97
-#, fuzzy
 msgid "debug permissions true / false - Turn on permissions debugging"
 msgstr ""
-"Berechtigungen wahr/falsch debuggen-Einschalten von Berechtigungen, die "
+"debug permissions true / false - Einschalten von Berechtigungen, für "
 "debugging"
 
 #: oswp-ConsoleCommand.php:98
-#, fuzzy
 msgid "debug scene get - List current scene options."
-msgstr "Debug-Szene erhalten-Liste der aktuellen Szene-Optionen."
+msgstr "debug scene get - Liste der aktuellen Szene Optionen."
 
 #: oswp-ConsoleCommand.php:99
-#, fuzzy
 msgid "debug scene set param value - Turn on scene debugging options."
-msgstr "Debug-Szene set param value-Turn on scene debugging options."
+msgstr ""
+"debug scene set - param value - Aktiviert die Option zum Debuggen von Szenen."
 
 #: oswp-ConsoleCommand.php:100
-#, fuzzy
 msgid ""
 "debug scripts log item-id log-level - Extra debug logging for a particular "
 "script."
 msgstr ""
-"Debug-Skripte loggen item-id log-level-Extra Debug-Logging für ein "
-"bestimmtes Skript."
+"debug scripts log - item-id log-level - Zusätzliche Debug Protokollierung "
+"für ein bestimmtes Skript."
 
 #: oswp-ConsoleCommand.php:101
-#, fuzzy
 msgid ""
 "debug threadpool level 0..3 - Turn on logging of activity in the main thread "
 "pool."
 msgstr ""
-"Debug-Pthreadpool-Level 0 .. 3-Schalten Sie die Protokollierung der "
-"Aktivität im Haupt-Thread-Pool ein."
+"debug threadpool level 0..3 - Aktiviert die Protokollierung von Aktivitäten "
+"im Hauptthread-Pool."
 
 #: oswp-ConsoleCommand.php:102
-#, fuzzy
 msgid ""
 "debug threadpool set worker|iocp min|max n - Set threadpool parameters.  For "
 "debug purposes."
 msgstr ""
-"Debug Threadpool set worker | iocp min | max n-Set threadpool parameter.  "
-"Für Debug-Zwecke."
+"debug threadpool set worker|iocp min|max n - Legt die Threadpool Parameter "
+"fest. Für Debug Zwecke."
 
 #: oswp-ConsoleCommand.php:103
-#, fuzzy
 msgid "debug threadpool status - Show current debug threadpool parameters."
 msgstr ""
-"Threadpool-Status debugelt-Zeigen Sie die aktuellen Debug-Threadpool-"
-"Parameter."
+"debug threadpool status - Zeigt die aktuellen Debug Threadpool Parameter an."
 
 #: oswp-ConsoleCommand.php:104
-#, fuzzy
 msgid "debug xengine log level - Turn on detailed xengine debugging."
 msgstr ""
-"Debug xengine Log-Level-Schalten Sie detailliertes xengine Debugging ein."
+"debug xengine log - level - Aktiviert das detaillierte Xengine Debugging."
 
 #: oswp-ConsoleCommand.php:105
-#, fuzzy
 msgid "delete object creator UUID - Delete scene objects by creator"
-msgstr "Objektschöpfer UUID löschen-Szenenobjekte durch den Schöpfer löschen"
+msgstr "delete object creator - UUID - Löschen von Objekten eines Erstellers"
 
 #: oswp-ConsoleCommand.php:106
-#, fuzzy
 msgid ""
 "delete object id UUID-or-localID - Delete a scene object by uuid or localID"
 msgstr ""
-"Löschen Sie Objekt ID UUID-oder localID-Löschen Sie ein Szenenobjekt von "
-"uuid oder localID"
+"delete object id - UUID-or-localID - Löscht ein Objekt mit der UUID oder "
+"localID"
 
 #: oswp-ConsoleCommand.php:107
-#, fuzzy
 msgid "delete object name --regex name - Delete a scene object by name."
-msgstr ""
-"Löschen Sie den Objektnamen--regex Name-Löschen Sie ein Szenenobjekt mit "
-"Namen."
+msgstr "delete object name --regex Name - Löschen eines Objekts nach Name."
 
 #: oswp-ConsoleCommand.php:108
 #, fuzzy
