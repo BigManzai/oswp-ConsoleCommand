@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 /**
  * WordPress Widget oswp-consolecommand
@@ -14,7 +15,7 @@
  * Plugin Name:       oswp-consolecommand
  * Plugin URI:        https://github.com/BigManzai/oswp-consolecommand
  * Description:       OpenSimulator WordPress Console Command only appears in the Admin menu. The plugin will be added to the left side of your dashboard menu. The plugin sends a freely selectable command to the OpenSimulator.
- * Version:           1.0.8
+ * Version:           1.0.9
  * Author:            Manfred Aabye
  * Author URI:        http://openmanniland.de
  * Text Domain:       oswp-consolecommand
@@ -25,6 +26,17 @@
  */
 // create oswp plugin settings menu
 add_action('admin_menu', 'oswp_plugin_create_menu');
+
+// Our filter callback function
+function example_callback( $string, $arg1, $arg2 ) {
+    // (maybe) modify $string
+    return $string;
+}
+add_filter( 'example_filter', 'example_callback', 10, 3 );
+
+// Gettext einfügen
+/* Make theme available for translation */
+	load_plugin_textdomain( 'oswp-consolecommand', false, basename( dirname( __FILE__ ) ) . '/lang' );
 
 function oswp_plugin_create_menu() {
 
@@ -130,11 +142,11 @@ function oswp_plugin_settings_page() { ?>
 			<?php echo '<li>' . esc_html__( 'get log level - Get the current console logging level', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'help item - Display help on a particular command or on a list of commands in a category', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'help Terrain - Get help on plugin command terrain', 'oswp-consolecommand' ) . '</li>'; ?>
-			<?php echo '<li>' . esc_html__( 'help Terrain - Get help on plugin command terrain', 'oswp-consolecommand' ) . '</li>'; ?>
+
 			<?php echo '<li>' . esc_html__( 'help Tree - Get help on plugin command tree', 'oswp-consolecommand' ) . '</li>'; ?>
-			<?php echo '<li>' . esc_html__( 'help Tree - Get help on plugin command tree', 'oswp-consolecommand' ) . '</li>'; ?>
+
 			<?php echo '<li>' . esc_html__( 'help Windlight - Get help on plugin command windlight', 'oswp-consolecommand' ) . '</li>'; ?>
-			<?php echo '<li>' . esc_html__( 'help Windlight - Get help on plugin command windlight', 'oswp-consolecommand' ) . '</li>'; ?>
+
 			<?php echo '<li>' . esc_html__( 'j2k decode ID - Do JPEG2000 decoding of an asset.', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'kick user first last --force message - Kick a user off the simulator', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'land clear - Clear all the parcels from the region.', 'oswp-consolecommand' ) . '</li>'; ?>
