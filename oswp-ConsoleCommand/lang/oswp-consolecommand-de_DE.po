@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: oswp-consolecommand\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-02 10:09+0000\n"
-"PO-Revision-Date: 2019-04-04 16:34+0200\n"
+"PO-Revision-Date: 2019-04-04 17:19+0200\n"
 "Last-Translator: Manfred Aabye <openmanniland@gmx.de>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -234,111 +234,97 @@ msgid "delete object name --regex name - Delete a scene object by name."
 msgstr "delete object name --regex Name - Löschen eines Objekts nach Name."
 
 #: oswp-ConsoleCommand.php:108
-#, fuzzy
 msgid ""
 "delete object outside - Löscht alle Szenenobjekte außerhalb der "
 "Regionsgrenzen"
 msgstr ""
-"Objekt draußen löschen-Löscht alle Szenenobjekte außerhalb der "
-"Regionsgrenzen löschen"
+"delete object outside - Löscht alle Szenenobjekte außerhalb von "
+"Bereichsgrenzen"
 
 #: oswp-ConsoleCommand.php:109
-#, fuzzy
 msgid "delete object owner UUID - Delete scene objects by owner"
-msgstr "Objektbesitzer UUID löschen-Szenenobjekte löschen"
+msgstr "delete object owner - UUID - Löschen von Objekten nach Eigentümer"
 
 #: oswp-ConsoleCommand.php:110
-#, fuzzy
 msgid ""
 "delete object pos start x, start y , start z end x, end y, end z - Delete "
 "scene objects within the given volume."
 msgstr ""
-"Löschen Sie Objekt pos start x, start y, start z end x, end y, end z-Löschen "
-"Sie Szenenobjekte innerhalb der angegebenen Lautstärke."
+"delete object pos start x, start y , start z end x, end y, end z - Löschen "
+"von Objekten innerhalb des angegebenen Raumes."
 
 #: oswp-ConsoleCommand.php:111
-#, fuzzy
 msgid "delete-region name - Delete a region from disk"
-msgstr "Name der Delete-Region-Eine Region aus der Scheibe löschen"
+msgstr "delete-region name - Löschen eines Objekts nach Name"
 
 #: oswp-ConsoleCommand.php:112
-#, fuzzy
 msgid "dump asset id - Dump an asset"
-msgstr "Müllhalde ablegen-ein Vermögen abwerfen"
+msgstr "dump asset id - ein Asset ablegen"
 
 #: oswp-ConsoleCommand.php:113
-#, fuzzy
 msgid ""
 "dump object id UUID-or-localID - Dump the formatted serialization of the "
 "given object to the file UUID.xml"
 msgstr ""
-"Dumping-Objekt ID UUID-or localID-Dump die formatierte Serialisierung des "
-"gegebenen Objekts in die Datei UUID.xml"
+"dump object id <UUID-oder-localID> - Dump die formatierte Serialisierung des "
+"angegebenen Objekts in die Datei <UUID> .xml"
 
 #: oswp-ConsoleCommand.php:114
-#, fuzzy
 msgid "edit scale name x y z - Change the scale of a named prim"
-msgstr "Skalennamen x y z bearbeiten-Die Skala eines benannten Prims ändern"
+msgstr ""
+"edit scale -name- -x- -y- -z- - Ändert die Skalierung eines benannten Prims"
 
 #: oswp-ConsoleCommand.php:283
-#, fuzzy
 msgid "End of Commands"
-msgstr "Ende der Befehle"
+msgstr "End - Ende der Befehle"
 
 #: oswp-ConsoleCommand.php:115
-#, fuzzy
 msgid ""
 "estate create owner UUID estate name - Creates a new estate with the "
 "specified name, owned by the specified user. Estate name must be unique."
 msgstr ""
-"Grundstückserei Eigentümer UUID Immobilien-Name-Erstellt eine neue Immobilie "
-"mit dem angegebenen Namen, die im Besitz des angegebenen Benutzers. Der Name "
-"des Anwesens muss eindeutig sein."
+"estate create owner UUID estate name - Erstellt ein neues estate mit dem "
+"angegebenen Namen, das dem angegebenen Benutzer gehört. Estate Name muss "
+"eindeutig sein."
 
 #: oswp-ConsoleCommand.php:116
-#, fuzzy
 msgid ""
 "estate link region estate ID region ID - Attaches the specified region to "
 "the specified estate."
 msgstr ""
-"Nachlass-Region Immobilien-Region ID Region ID-Angriff auf die angegebene "
-"Region auf die angegebenen Immobilien."
+"estate link region - estateID regionID - Hängt die angegebene Region an die "
+"angegebene Immobilie an."
 
 #: oswp-ConsoleCommand.php:117
-#, fuzzy
 msgid ""
 "estate set name estate-id new name - Sets the name of the specified estate "
 "to the specified value. New name must be unique."
 msgstr ""
-"Nachlass-Name estate-id neuer Name-Setzt den Namen des angegebenen "
-"Nachlasses auf den angegebenen Wert. Neuer Name muss einmalig sein."
+"estate set name - estate-id Neuer Name - Legt den Namen des angegebenen "
+"Immobilienvermögens auf den angegebenen Wert fest."
 
 #: oswp-ConsoleCommand.php:118
-#, fuzzy
 msgid ""
 "estate set owner estate-id UUID | Firstname Lastname  - Sets the owner of "
 "the specified estate to the specified UUID or user."
 msgstr ""
-"Grundstück-Set-Eigentümer estate-id UUID | Vorname Lastname-Setzt den "
-"Eigentümer der angegebenen Immobilie an die angegebene UUID oder den "
-"Benutzer."
+"estate set owner - estate-id UUID | Vorname Nachname - Legt den Eigentümer "
+"des angegebenen Standorts auf die angegebene UUID oder den angegebenen "
+"Benutzer fest."
 
 #: oswp-ConsoleCommand.php:119
-#, fuzzy
 msgid "estate show - Shows all estates on the simulator."
-msgstr "Nachlass-Show-Zeigt alle Nachlässte auf dem Simulator."
+msgstr "estate show - Zeigt alle Anwesen im Simulator an."
 
 #: oswp-ConsoleCommand.php:120
-#, fuzzy
 msgid "export-map path - Save an image of the world map"
-msgstr "Export-Kartenpfad-Speichern Sie ein Bild der Weltkarte"
+msgstr "export-map - Pfad - Speichert ein Bild der Karte"
 
 #: oswp-ConsoleCommand.php:121
-#, fuzzy
 msgid ""
 "fcache assets - Attempt a deep scan and cache of all assets in all scenes"
 msgstr ""
-"Fcache Assets-Versuch, einen tiefen Scan und Cache aller Assets in allen "
+"fcache assets - Versucht einen tiefen Scan und Cache aller Assets in allen "
 "Szenen"
 
 #: oswp-ConsoleCommand.php:122
@@ -425,12 +411,10 @@ msgid "help Windlight - Get help on plugin command windlight"
 msgstr "Helfen Sie Windlight-Holen Sie Hilfe auf Plug-In-Kommando Windlicht"
 
 #. Author URI of the plugin
-#, fuzzy
 msgid "http://openmanniland.de"
 msgstr "http://openmanniland.de"
 
 #. URI of the plugin
-#, fuzzy
 msgid "https://github.com/BigManzai/oswp-consolecommand"
 msgstr "https://github.com/BigManzai/oswp-consolecommand"
 
@@ -855,9 +839,8 @@ msgid "show info - Show general information about the server"
 msgstr "Infos anzeigen-allgemeine Informationen über den Server anzeigen"
 
 #: oswp-ConsoleCommand.php:194
-#, fuzzy
 msgid "show modules - Show module data"
-msgstr "Module anzeigen-Moduldaten anzeigen"
+msgstr "show modules - Moduldaten anzeigen"
 
 #: oswp-ConsoleCommand.php:195
 #, fuzzy
@@ -964,9 +947,8 @@ msgstr ""
 "Warteschlangen voll anzeigen-Warteschlangen-Daten für jeden Client anzeigen"
 
 #: oswp-ConsoleCommand.php:208
-#, fuzzy
 msgid "show ratings - Show rating data"
-msgstr "Bewertungen anzeigen-Bewertungsdaten anzeigen"
+msgstr "show ratings - Bewertungsdaten anzeigen"
 
 #: oswp-ConsoleCommand.php:209
 #, fuzzy
@@ -1045,9 +1027,8 @@ msgstr ""
 "insgesamt anzeigen"
 
 #: oswp-ConsoleCommand.php:220
-#, fuzzy
 msgid "show uptime - Show server uptime"
-msgstr "Show-Uptime-Show-Server-Uptime"
+msgstr "show uptime - Server Laufzeit anzeigen"
 
 #: oswp-ConsoleCommand.php:221
 #, fuzzy
