@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: oswp-consolecommand\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-02 10:09+0000\n"
-"PO-Revision-Date: 2019-04-04 17:44+0200\n"
+"PO-Revision-Date: 2019-04-04 18:44+0200\n"
 "Last-Translator: Manfred Aabye <openmanniland@gmx.de>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -360,52 +360,43 @@ msgid "force permissions true / false - Force permissions on or off"
 msgstr "force permissions true / false - Erzwinge Berechtigungen an oder aus"
 
 #: oswp-ConsoleCommand.php:127
-#, fuzzy
 msgid "force update - Force the update of all objects on clients"
-msgstr "Kraft-Update-Toben Sie das Update aller Objekte auf Clients"
+msgstr "force update - Erzwinge die Aktualisierung aller Objekte auf Clients"
 
 #: oswp-ConsoleCommand.php:128
-#, fuzzy
 msgid ""
 "friends show --cache first-name last-name - Show the friends for the given "
 "user if they exist."
 msgstr ""
-"Freunde zeigen--cache Vornamen-Zeigen Sie den Freunden für den angegebenen "
-"Benutzer, wenn sie existieren."
+"friends show --cache Vorname Nachname - Zeigt alle Freunde des Benutzer an."
 
 #: oswp-ConsoleCommand.php:129
-#, fuzzy
 msgid "generate map - Generates and stores a new maptile."
-msgstr "Karte generieren-Generaten und speichern eine neue Karte."
+msgstr "generate map - Generiert und speichert eine neue Karte."
 
 #: oswp-ConsoleCommand.php:130
-#, fuzzy
 msgid "get log level - Get the current console logging level"
-msgstr "Log-Level erhalten-Get the current console logging level"
+msgstr "get log level - Ruft die aktuelle Protokollierungsstufe der Konsole ab"
 
 #: oswp-ConsoleCommand.php:131
-#, fuzzy
 msgid ""
 "help item - Display help on a particular command or on a list of commands in "
 "a category"
 msgstr ""
-"Hilfestellung-Hilfe auf einem bestimmten Befehl anzeigen oder auf einer "
-"Befehlsliste in einer Kategorie"
+"help - Befehls/Listenname - Zeigt Hilfe zu einem bestimmten Befehl oder "
+"einer Liste von Befehlen in einer Kategorie an"
 
 #: oswp-ConsoleCommand.php:132 oswp-ConsoleCommand.php:133
-#, fuzzy
 msgid "help Terrain - Get help on plugin command terrain"
-msgstr "Hilfe für Terrain-Hilfe auf Plugin-Befehlsgelände"
+msgstr "help Terrain - Hilfe zu Plugin Befehlen erhalten"
 
 #: oswp-ConsoleCommand.php:134 oswp-ConsoleCommand.php:135
-#, fuzzy
 msgid "help Tree - Get help on plugin command tree"
-msgstr "Hilfe für Baum-Hilfe auf Plugin-Befehlsbaum"
+msgstr "help Tree - Hilfe zu Plugin Befehlen erhalten"
 
 #: oswp-ConsoleCommand.php:136 oswp-ConsoleCommand.php:137
-#, fuzzy
 msgid "help Windlight - Get help on plugin command windlight"
-msgstr "Helfen Sie Windlight-Holen Sie Hilfe auf Plug-In-Kommando Windlicht"
+msgstr "help Windlight - Hilfe zu Plugin Befehlen erhalten"
 
 #. Author URI of the plugin
 msgid "http://openmanniland.de"
@@ -416,77 +407,70 @@ msgid "https://github.com/BigManzai/oswp-consolecommand"
 msgstr "https://github.com/BigManzai/oswp-consolecommand"
 
 #: oswp-ConsoleCommand.php:138
-#, fuzzy
 msgid "j2k decode ID - Do JPEG2000 decoding of an asset."
-msgstr "j2k-decode-ID-Machen Sie JPEG2000-Dekodierung eines Vermögenswertes."
+msgstr "j2k decode ID - JPEG2000-Dekodierung eines Asset."
 
 #: oswp-ConsoleCommand.php:139
-#, fuzzy
 msgid "kick user first last --force message - Kick a user off the simulator"
-msgstr "Kick-User first last--force message-Kick a user off the simulator"
+msgstr ""
+"kick user -Vorname Nachname- --force -Nachricht - Kickt einen User vom "
+"Simulator"
 
 #: oswp-ConsoleCommand.php:140
-#, fuzzy
 msgid "land clear - Clear all the parcels from the region."
-msgstr "Land klar-Alle Pakete aus der Region löschen."
+msgstr "land clear - Löscht alle Pakete aus der Region."
 
 #: oswp-ConsoleCommand.php:141
-#, fuzzy
 msgid ""
 "land show local-land-id - Show information about the parcels on the region."
 msgstr ""
-"Land zeigen Lokal-Land-ID-Informationen über die Pakete zur Region anzeigen."
+"land show - local-land-id - Zeigt Informationen über die Parzellen in der "
+"Region an."
 
 #: oswp-ConsoleCommand.php:142
-#, fuzzy
 msgid "link-mapping x y - Set local coordinate to map HG regions to"
 msgstr ""
-"Link-Mapping x y-Stellen Sie lokale Koordinaten ein, um die HG-Regionen zu "
-"kartieren"
+"link-mapping x y - Legen Sie die lokale Koordinate für die Zuordnung von HG-"
+"Regionen an"
 
 #: oswp-ConsoleCommand.php:143
-#, fuzzy
 msgid ""
 "link-region Xloc Yloc ServerURI RemoteRegionName - Link a HyperGrid Region. "
 "Examples for ServerURI: http://grid.net:8002/ or http://example.org/path/foo."
 "php"
 msgstr ""
-"Link-Region Xloc Yloc ServerURI RemoteRegionName-Link a HyperGrid Region. "
-"Beispiele für ServerURI: http://grid.net:8002/oder http://example.org/path/"
-"foo.php"
+"link-region Xloc Yloc ServerURI RemoteRegionName - Verknüpfen Sie einen "
+"HyperGrid Bereich. Beispiele für ServerURI: http://grid.net:8002/ oder "
+"http://example.org/path/foo.php"
 
 #: oswp-ConsoleCommand.php:144
-#, fuzzy
 msgid ""
 "load iar -m|--merge first last inventory path password IAR path - Load user "
 "inventory archive IAR."
 msgstr ""
-"Laden Sie iar-m |--merge erste letzte Inventarpfad-Passwort IAR-Pfad-Laden "
-"Sie das Benutzerinventar-Archiv IAR."
+"load iar -m --merge Vorname Nachname InventarPfad Passwort Dateiname.iar - "
+"Lädt ein Inventararchiv (IAR)."
 
 #: oswp-ConsoleCommand.php:145
-#, fuzzy
 msgid ""
 "load oar -m|--merge -s|--skip-assets --default-user User Name --force-"
 "terrain --force-parcels --no-objects --rotation degrees --bounding-origin x,"
 "y,z --bounding-size x,y,z --displacement x,y,z -d|--debug OAR path - Load a "
 "regions data from an OAR archive."
 msgstr ""
-"load oar-m |--merge-s |--skip-assets--default-user User Name--force-terrain--"
-"force-parcels--no-objects--rotation grads x, y, z--bounding-size x, y, z--"
-"displacement x, y, z-d |--debug OAR-Pfad-Laden Sie eine Region Daten aus "
-"einem OAR-Archiv ."
+"load oar -m --merge -s|--skip-assets --default-user Benutzername --force-"
+"terrain --force-parcels --no-objects --rotation Gradanzahl --bounding-origin "
+"x,y,z --bounding-size x,y,z --displacement x,y,z -d|--debug Dateiname.oar - "
+"Lädt Daten einer Region aus einem OAR Archiv."
 
 #: oswp-ConsoleCommand.php:146
-#, fuzzy
 msgid "load xml file name -newUID x y z - Load a regions data from XML format"
 msgstr ""
-"xml-Dateiname-newUID x y z-Laden Sie eine Region Daten aus dem XML-Format"
+"load xml2 - Dateiname.xml2 - Lädt Daten einer Region aus einem XML2 Archiv"
 
 #: oswp-ConsoleCommand.php:147
-#, fuzzy
 msgid "load xml2 file name - Load a regions data from XML2 format"
-msgstr "Xml2-Dateiname laden-Laden Sie eine Region Daten aus dem XML2-Format"
+msgstr "load xml2 - Dateiname - Lädt Daten einer Region aus dem XML2 Archiv"
 
 #: oswp-ConsoleCommand.php:148
 msgid "login disable - Disable simulator logins"
@@ -505,13 +489,12 @@ msgid "Manfred Aabye"
 msgstr "Manfred Aabye"
 
 #: oswp-ConsoleCommand.php:151
-#, fuzzy
 msgid ""
 "monitor report - Returns a variety of statistics about the current region "
 "and/or simulator"
 msgstr ""
-"Monitoringbericht-veröffentlicht eine Vielzahl von Statistiken über die "
-"aktuelle Region und/oder Simulator"
+"monitor report - Gibt eine Vielzahl von Statistiken über die aktuelle Region "
+"und/oder den Simulator aus"
 
 #: oswp-ConsoleCommand.php:66
 msgid "OpenSimulator Console Commands"
@@ -532,71 +515,64 @@ msgid "oswp-consolecommand"
 msgstr "oswp-consolecommand"
 
 #: oswp-ConsoleCommand.php:152
-#, fuzzy
 msgid ""
 "physics get param|ALL - Get physics parameter from currently selected region"
 msgstr ""
-"Die Physik hat param | ALL-Get Physik-Parameter aus der aktuell ausgewählten "
-"Region"
+"physics get - param|ALL - Erhalte den Physik-Parameter der aktuell "
+"ausgewählten Region"
 
 #: oswp-ConsoleCommand.php:153
-#, fuzzy
 msgid "physics list - List settable physics parameters"
-msgstr "Physik-Liste-Liste der festgelegten physikalischen Parameter"
+msgstr ""
+"physics list - Listen Sie die einstellbaren physikalischen Parameter auf"
 
 #: oswp-ConsoleCommand.php:154
-#, fuzzy
 msgid ""
 "physics set param value|TRUE|FALSE localID|ALL - Set physics parameter from "
 "currently selected region"
 msgstr ""
-"Die Physik setzt param Wert | TRUE | FALSE localID | ALL-Set Physik-"
-"Parameter aus der aktuell ausgewählten Region"
+"physics set - param value | TRUE | FALSE localID | ALL - Stellt den "
+"Physikparameter der aktuell ausgewählten Region ein"
 
 #: oswp-ConsoleCommand.php:155
-#, fuzzy
 msgid "quit - Quit the application"
-msgstr "Aufhören-Beenden Sie die Anwendung"
+msgstr "quit - Beendet die Anwendung"
 
 #: oswp-ConsoleCommand.php:156
-#, fuzzy
 msgid ""
 "region get - Show control information for the currently selected region host "
 "name, max physical prim size, etc."
 msgstr ""
-"Region get-Zeigen Sie Kontrollinformationen für den aktuell ausgewählten "
-"Region-Hostnamen, maximale physikalische Prim-Größe, etc."
+"region get - Zeigt Steuerinformationen für die aktuell ausgewählte Region an "
+"(Hostname, maximale Größe des physischen Prims usw.)."
 
 #: oswp-ConsoleCommand.php:157
-#, fuzzy
 msgid "region restart abort message - Abort a region restart"
-msgstr "Regionalneustart abgebrochen Nachricht-Abort ein Regionalneustart"
+msgstr "region restart abort - Nachricht - Bricht den Neustart einer Region ab"
 
 #: oswp-ConsoleCommand.php:158
-#, fuzzy
 msgid ""
 "region restart bluebox message delta seconds+ - Schedule a region restart"
 msgstr ""
-"Region Neustart Bluebox-Nachricht Delta-Sekunden +-Planen Sie einen "
-"regionalen Neustart"
+"region restart bluebox - Nachricht DeltaSekunden - Plant einen Neustart der "
+"Region"
 
 #: oswp-ConsoleCommand.php:159
-#, fuzzy
 msgid ""
 "region restart notice message delta seconds+ - Schedule a region restart"
-msgstr "Benachrichtigung der Region neu"
+msgstr ""
+"region restart notice - Nachricht DeltaSekunden - Plant einen Neustart der "
+"Region"
 
 #: oswp-ConsoleCommand.php:160
-#, fuzzy
 msgid "region set - Set control information for the currently selected region."
 msgstr ""
-"Regie-Set-Steuerungsinformationen für die aktuell ausgewählte Region "
-"einstellen."
+"region set - Legt die Steuerungsinformationen für die aktuell ausgewählte "
+"Region fest."
 
 #: oswp-ConsoleCommand.php:161
-#, fuzzy
 msgid "remove-region name - Remove a region from this simulator"
-msgstr "Abzugsgebietsname-Entfernen Sie eine Region aus diesem Simulator"
+msgstr "remove-region - Name - Entfernt eine Region aus dem Simulator"
 
 #: oswp-ConsoleCommand.php:162
 #, fuzzy
@@ -1328,9 +1304,8 @@ msgid "unlink-region local name - Unlink a hypergrid region"
 msgstr "Ortsnamen unklopp-region-Unlink eine Hypergrid-Region"
 
 #: oswp-ConsoleCommand.php:269
-#, fuzzy
 msgid "vivox debug on|off - Set vivox debugging"
-msgstr "Vivox debug on | off-Set vivox debugging"
+msgstr "vivox debug on|off  - Stellt vivox debugging an/aus"
 
 #: oswp-ConsoleCommand.php:270
 #, fuzzy
