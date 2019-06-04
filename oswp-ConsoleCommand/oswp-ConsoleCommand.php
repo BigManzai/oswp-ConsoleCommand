@@ -58,7 +58,7 @@ function register_oswp_plugin_settings() {
 function oswp_plugin_settings_page() { ?>
 	
 <!-- 
-	OpenSim Console Commands V1.08 by Manfred Aabye
+	OpenSim Console Commands V1.0.10 by Manfred Aabye
  -->
 <title>OS Console</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
