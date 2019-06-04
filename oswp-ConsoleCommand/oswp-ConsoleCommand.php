@@ -383,23 +383,23 @@ function oswp_plugin_settings_page() { ?>
 <!-- OpenSim Einstellung --> 
 	<div class="w3-row w3-section">
 	<p><label class="w3-text"><i class="fa fa-cogs" style="font-size:48px;color:grey"></i></label></p>
-    <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   OpenSim IP:</b></label></p>
+    <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   OpenSim or Robust IP:</b></label></p>
         <div class="w3-half">
-            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="text" placeholder="OpenSim IP" name="OpenSim_IP"/></p>
+            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="text" placeholder="OpenSim or Robust IP" name="OpenSim_IP"/></p>
         </div>
     </div>
  
 	<div class="w3-row w3-section">
-    <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   OpenSim Port:</b></label></p>
+    <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   OpenSim or Robust Port:</b></label></p>
         <div class="w3-third">
-            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="text" placeholder="OpenSim Port" name="OpenSim_Port"/></p>
+            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="text" placeholder="OpenSim or Robust Port" name="OpenSim_Port"/></p>
         </div>
     </div>
 
  	<div class="w3-row w3-section">
-    <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   OpenSim Password:</b></label></p>
+    <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   OpenSim or Robust Password:</b></label></p>
         <div class="w3-threequarter">
-            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="password" placeholder="OpenSim Password" name="OpenSim_Password"/></p>
+            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="password" placeholder="OpenSim or Robust Password" name="OpenSim_Password"/></p>
         </div>
     </div>
 
@@ -408,9 +408,9 @@ function oswp_plugin_settings_page() { ?>
 <!-- Command Eingabe --> 
  	<div class="w3-row w3-section">
 	<p><label class="w3-text"><i class="glyphicon glyphicon-file" style="font-size:48px;color:grey"></i></label></p>
-    <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   OpenSim Command:</b></label></p>
+    <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   OpenSim or Robust Command:</b></label></p>
         <div class="">
-            <input class="w3-input w3-border w3-sand w3-bottombar" type="text" placeholder="OpenSim Command" name="OpenSim_Command"/>
+            <input class="w3-input w3-border w3-sand w3-bottombar" type="text" placeholder="OpenSim or Robust Command" name="OpenSim_Command"/>
         </div>
     </div> 
 <br>
