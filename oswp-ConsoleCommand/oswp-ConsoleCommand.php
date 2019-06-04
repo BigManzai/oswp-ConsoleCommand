@@ -15,7 +15,7 @@
  * Plugin Name:       oswp-consolecommand
  * Plugin URI:        https://github.com/BigManzai/oswp-consolecommand
  * Description:       OpenSimulator WordPress Console Command only appears in the Admin menu. The plugin will be added to the left side of your dashboard menu. The plugin sends a freely selectable command to the OpenSimulator.
- * Version:           1.0.9
+ * Version:           1.0.10
  * Author:            Manfred Aabye
  * Author URI:        http://openmanniland.de
  * Text Domain:       oswp-consolecommand
@@ -82,6 +82,10 @@ function oswp_plugin_settings_page() { ?>
 <div class="w3-sidebar w3-bar-block w3-card w3-half w3-sand " style="right:0">
 	<ul class="w3-ul w3-sand">
 		<b>
+			<?php echo '<li>' . esc_html__( '-------------------------------------------------------', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'OpenSim Console', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( '-------------------------------------------------------', 'oswp-consolecommand' ) . '</li>'; ?>
+			
 			<?php echo '<li>' . esc_html__( 'alert - Send an alert to everyone', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'alert-user firstname lastname message - Send an alert to a user', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'appearance find uuid-or-start-of-uuid - Find out which avatar uses the given asset as a baked texture, if any.', 'oswp-consolecommand' ) . '</li>'; ?>
@@ -142,11 +146,8 @@ function oswp_plugin_settings_page() { ?>
 			<?php echo '<li>' . esc_html__( 'get log level - Get the current console logging level', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'help item - Display help on a particular command or on a list of commands in a category', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'help Terrain - Get help on plugin command terrain', 'oswp-consolecommand' ) . '</li>'; ?>
-
 			<?php echo '<li>' . esc_html__( 'help Tree - Get help on plugin command tree', 'oswp-consolecommand' ) . '</li>'; ?>
-
 			<?php echo '<li>' . esc_html__( 'help Windlight - Get help on plugin command windlight', 'oswp-consolecommand' ) . '</li>'; ?>
-
 			<?php echo '<li>' . esc_html__( 'j2k decode ID - Do JPEG2000 decoding of an asset.', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'kick user first last --force message - Kick a user off the simulator', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'land clear - Clear all the parcels from the region.', 'oswp-consolecommand' ) . '</li>'; ?>
@@ -292,7 +293,82 @@ function oswp_plugin_settings_page() { ?>
 			<?php echo '<li>' . esc_html__( 'windlight enable - Enable the windlight plugin.', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'windlight load - Load windlight profile from the database and broadcast.', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'xengine status - Show status information', 'oswp-consolecommand' ) . '</li>'; ?>
+			
+			<?php echo '<li>' . esc_html__( '-------------------------------------------------------', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'Robust Console', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( '-------------------------------------------------------', 'oswp-consolecommand' ) . '</li>'; ?>
+			
+			<?php echo '<li>' . esc_html__( 'delete asset -ID- - Delete asset from database', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'dump asset -ID- - Dump asset to a file', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show asset -ID- - Show asset information', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show http-handlers - Show all registered http handlers', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'debug http -in|out|all- --level-- - Turn on http request logging.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'debug jobengine -start|stop|status|log- - Start, stop, get status or set logging level of the job engine.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'debug threadpool level 0..3 - Turn on logging of activity in the main thread pool.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'debug threadpool set worker|iocp min|max -n- - Set threadpool parameters.  For debug purposes.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'debug threadpool status - Show current debug threadpool parameters.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'force gc - Manually invoke runtime garbage collection.  For debugging purposes', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show threadpool calls complete - Show details about threadpool calls that have been completed.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'threads abort -thread-id- - Abort a managed thread.  Use "show threads" to find possible threads.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'delete bakes -ID- - Delete agents baked textures from server', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'command-script -script- - Run a command script from file', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'config get --section-- --key-- - Synonym for config show', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'config save -path- - Save current configuration to a file at the given path', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'config set -section- -key- -value- - Set a config option.  ', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'config show --section-- --key-- - Show config information', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'get log level - Get the current console logging level', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'quit - Quit the application', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'set log level -level- - Set the console logging level for this session.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show checks - Show checks configured for this server', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show grid size - Show the current grid size (excluding hyperlink references)', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show info - Show general information about the server', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show stats -list|all|(-category--.-container--)+ - Alias for stats show command', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show threads - Show thread status', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show uptime - Show server uptime', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show version - Show server version', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'shutdown - Quit the application', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'stats record start|stop - Control whether stats are being regularly recorded to a separate file.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'stats save -path- - Save stats snapshot to a file.  If the file already exists, then the report is appended.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'stats show -list|all|(-category--.-container--)+ - Show statistical information for this server', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'threads show - Show thread status.  Synonym for "show threads"', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'link-mapping --x- -y-- - Set local coordinate to map HG regions to', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'link-region -Xloc- -Yloc- -ServerURI- --RemoteRegionName-- - Link a HyperGrid Region. ', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show hyperlinks - List the HG regions', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'unlink-region -local name- - Unlink a hypergrid region', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'plugin add "plugin index" - Install plugin from repository.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'plugin disable "plugin index" - Disable a plugin', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'plugin enable "plugin index" - Enable the selected plugin plugin', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'plugin info "plugin index" - Show detailed information for plugin', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'plugin list available - List available plugins', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'plugin list installed - List install plugins', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'plugin remove "plugin index" - Remove plugin from repository', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'plugin update "plugin index" - Update the plugin', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'plugin updates - List available updates', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'deregister region id -region-id-+ - Deregister a region manually.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'set region flags -Region name- -flags- - Set database flags for region', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show region at -x-coord- -y-coord- - Show details on a region at the given co-ordinate.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show region name -Region name- - Show details on a region', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show regions - Show details on all regions', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'repo add "url" - Add repository', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'repo disable"-url | index-" - Disable registered repository', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'repo enable "-url | index-" - Enable registered repository', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'repo list - List registered repositories', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'repo refresh "url" - Sync with a registered repository', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'repo remove "-url | index-" - Remove repository from registry', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'create user --first- --last- --pass- --email- --user id- --model-- - Create a new user', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'login level -level- - Set the minimum user level to log in', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'login reset - Reset the login level to allow all users', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'login text -text- - Set the text users will see on login', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'reset user email --first- --last- --email-- - Reset a user email address', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'reset user password --first- --last- --password-- - Reset a user password', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'set user level --first- --last- --level-- - Set user level. ', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show account -first- -last- - Show account details for the given user', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show grid user -ID- - Show grid user entry.', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( 'show grid users online - Show number of grid users registered as online.', 'oswp-consolecommand' ) . '</li>'; ?>
+	
+			<?php echo '<li>' . esc_html__( '-------------------------------------------------------', 'oswp-consolecommand' ) . '</li>'; ?>
 			<?php echo '<li>' . esc_html__( 'End of Commands', 'oswp-consolecommand' ) . '</li>'; ?>
+			<?php echo '<li>' . esc_html__( '-------------------------------------------------------', 'oswp-consolecommand' ) . '</li>'; ?>
 		</b>
 	</ul>
 </div>
@@ -366,7 +442,7 @@ function senden()
 			$OpenSim_Port   = trim($_POST['OpenSim_Port']);
 			$OpenSim_Password  = $_POST['OpenSim_Password'];
 			$OpenSim_Command   = trim($_POST['OpenSim_Command']);
-
+			
 			// Einlesen der RemoteAdmin Datei.
 			include('RemoteAdmin.php');
 			 
