@@ -414,7 +414,7 @@ function oswp_plugin_settings_page() { ?>
         </div>
     </div> 
 <br>
-
+ 
 
 <!-- Command Button -->
     <div class="w3-row w3-section">
