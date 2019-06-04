@@ -15,7 +15,7 @@
  * Plugin Name:       oswp-consolecommand
  * Plugin URI:        https://github.com/BigManzai/oswp-consolecommand
  * Description:       OpenSimulator WordPress Console Command only appears in the Admin menu. The plugin will be added to the left side of your dashboard menu. The plugin sends a freely selectable command to the OpenSimulator.
- * Version:           1.0.10
+ * Version:           1.0.11
  * Author:            Manfred Aabye
  * Author URI:        http://openmanniland.de
  * Text Domain:       oswp-consolecommand
@@ -52,13 +52,14 @@ function register_oswp_plugin_settings() {
 	//register our settings
 	register_setting( 'oswp-plugin-settings-group', 'oswp_BaseURL' );
 	register_setting( 'oswp-plugin-settings-group', 'oswp_ConsolePass' );
-	register_setting( 'oswp-plugin-settings-group', 'oswp_ConsolePort' );	
+	register_setting( 'oswp-plugin-settings-group', 'oswp_ConsolePort' );
+	register_setting( 'oswp-plugin-settings-group', 'oswp_ConsoleName' );	
 }
 
 function oswp_plugin_settings_page() { ?>
 	
 <!-- 
-	OpenSim Console Commands V1.0.10 by Manfred Aabye
+	OpenSim Console Commands V1.0.11 by Manfred Aabye
  -->
 <title>OS Console</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -385,21 +386,28 @@ function oswp_plugin_settings_page() { ?>
 	<p><label class="w3-text"><i class="fa fa-cogs" style="font-size:48px;color:grey"></i></label></p>
     <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   OpenSim or Robust IP:</b></label></p>
         <div class="w3-half">
-            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="text" placeholder="OpenSim or Robust IP" name="OpenSim_IP"/></p>
+            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="text" placeholder="127.0.0.1" name="OpenSim_IP"/></p>
         </div>
     </div>
  
 	<div class="w3-row w3-section">
     <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   OpenSim or Robust Port:</b></label></p>
         <div class="w3-third">
-            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="text" placeholder="OpenSim or Robust Port" name="OpenSim_Port"/></p>
+            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="text" placeholder="9000" name="OpenSim_Port"/></p>
         </div>
     </div>
 
  	<div class="w3-row w3-section">
     <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   OpenSim or Robust Password:</b></label></p>
         <div class="w3-threequarter">
-            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="password" placeholder="OpenSim or Robust Password" name="OpenSim_Password"/></p>
+            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="password" placeholder="secret" name="OpenSim_Password"/></p>
+        </div>
+    </div>
+	
+ 	<div class="w3-row w3-section">
+    <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   Robust Name:</b></label></p>
+        <div class="w3-threequarter">
+            <p><input class="w3-input w3-border w3-pale-green w3-bottombar" type="text" placeholder="Robust Console Name (empty for OpenSim)" name="OpenSim_Name"/></p>
         </div>
     </div>
 
@@ -410,7 +418,7 @@ function oswp_plugin_settings_page() { ?>
 	<p><label class="w3-text"><i class="glyphicon glyphicon-file" style="font-size:48px;color:grey"></i></label></p>
     <p><label for="base" class="w3-label control-label"><i class="fa fa-pencil" style="font-size:24px"></i>   OpenSim or Robust Command:</b></label></p>
         <div class="">
-            <input class="w3-input w3-border w3-sand w3-bottombar" type="text" placeholder="OpenSim or Robust Command" name="OpenSim_Command"/>
+            <input class="w3-input w3-border w3-sand w3-bottombar" type="text" placeholder="shutdown" name="OpenSim_Command"/>
         </div>
     </div> 
 <br>
@@ -424,6 +432,8 @@ function oswp_plugin_settings_page() { ?>
 		<!-- <button class="w3-btn w3-red w3-border w3-bottombar" type="reset" name="Reset"><i class="fa fa-mail-reply" style="font-size:24px"></i>  Reset</button> -->
 	</div>
     </div>
+<br>
+
 </form>
 <?php endif ?>	
 </div>
@@ -441,18 +451,20 @@ function senden()
 			$OpenSim_IP   = trim($_POST['OpenSim_IP']);
 			$OpenSim_Port   = trim($_POST['OpenSim_Port']);
 			$OpenSim_Password  = $_POST['OpenSim_Password'];
+			$OpenSim_Name  = $_POST['OpenSim_Name'];
 			$OpenSim_Command   = trim($_POST['OpenSim_Command']);
 			
 			// Einlesen der RemoteAdmin Datei.
 			include('RemoteAdmin.php');
 			 
 			// Mit OpenSim verbinden
-			$myRemoteAdmin = new RemoteAdmin($OpenSim_IP, $OpenSim_Port, $OpenSim_Password);
+			//$myRemoteAdmin = new RemoteAdmin($OpenSim_IP, $OpenSim_Port, $OpenSim_Password);
+			$myRemoteAdmin = new RemoteAdmin($OpenSim_IP, $OpenSim_Port, $OpenSim_Password, $OpenSim_Name);
 			 
 			// OpenSim Konsolenbefehl samt parameter senden
 			$parameters = array('command' => $OpenSim_Command);
 			$myRemoteAdmin->SendCommand('admin_console_command', $parameters);
-			// Jetzt die Seite neu starten auffrischen oder sowas aber die Eingaben verschwinden
+			// Jetzt die Seite neu starten auffrischen oder sowas aber die Eingaben verschwindet leider
 			?>
 			<!-- <meta http-equiv="refresh" content="0; URL=#Top"> --> 
 			<meta http-equiv="refresh" content="0; URL=#start">
