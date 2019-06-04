@@ -21,12 +21,18 @@ Ni sur la fonction, ni la sécurité des données ou la fonctionnalité.
 Por supuesto no hay garantía en mi software.
 Ni en función ni seguridad de datos o funcionalidad. 
 
-Config Opensim.ini:
+Remote Config Opensim.ini:
 
      [RemoteAdmin]
      enabled = true
      access_password = your secret passwd
      enabled_methods = all
+
+Remote Config Robust.ini:
+
+    ConsoleUser = Name
+    ConsolePass = your secret passwd
+    ConsolePort = 0
 
 more Information:
 
