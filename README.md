@@ -9,17 +9,6 @@ Status OK
 
 ![ConsoleCommand](https://github.com/BigManzai/oswp-ConsoleCommand/blob/master/oswp-consolecommand.jpg)
 
-Selbstverständlich gibt es auf meiner Software keinerlei Garantie.
-Weder auf Funktion noch Datensicherheit oder Funktionalität.
-
-Of course there is no guarantee on my software.
-Neither on function nor data security or functionality. 
-
-Bien sûr, il n'y a aucune garantie sur mon logiciel.
-Ni sur la fonction, ni la sécurité des données ou la fonctionnalité. 
-
-Por supuesto no hay garantía en mi software.
-Ni en función ni seguridad de datos o funcionalidad. 
 
 Remote Config Opensim.ini:
 
