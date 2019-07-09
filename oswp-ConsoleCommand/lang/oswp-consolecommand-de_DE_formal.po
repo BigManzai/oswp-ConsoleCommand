@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: oswp-consolecommand\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-02 10:09+0000\n"
-"PO-Revision-Date: 2019-04-02 12:24+0200\n"
+"PO-Revision-Date: 2019-04-02 12:39+0200\n"
 "Last-Translator: Manfred Aabye <openmanniland@gmx.de>\n"
 "Language-Team: Deutsch (Sie)\n"
 "Language: de_DE@formal\n"
@@ -15,9 +15,8 @@ msgstr ""
 "X-Loco-Version: 2.2.2; wp-5.1.1\n"
 
 #: oswp-ConsoleCommand.php:73
-#, fuzzy
 msgid "alert - Send an alert to everyone"
-msgstr "Alarmanlage-Senden Sie eine Benachrichtigung an alle"
+msgstr "alert - Senden Sie eine Benachrichtigung an alle"
 
 #: oswp-ConsoleCommand.php:74
 msgid "alert-user firstname lastname message - Send an alert to a user"
@@ -26,14 +25,12 @@ msgstr ""
 "einen Benutzer"
 
 #: oswp-ConsoleCommand.php:75
-#, fuzzy
 msgid ""
 "appearance find uuid-or-start-of-uuid - Find out which avatar uses the given "
 "asset as a baked texture, if any."
 msgstr ""
-"Das Aussehen finden Sie uuid-or-start-of-uuid-Finden Sie heraus, welcher "
-"Avatar den gegebenen Vermögenswert als gebackene Textur verwendet, wenn "
-"überhaupt."
+"appearance find uuid-or-start-of-uuid - Finden Sie heraus, welcher Avatar "
+"den gegebenen Vermögenswert als gebackene Textur verwendet, wenn überhaupt."
 
 #: oswp-ConsoleCommand.php:76
 #, fuzzy
